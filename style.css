@@ -1,0 +1,158 @@
+:root{
+    font-family:"WindSong", serif;;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+}
+body{
+    background: #f3f3f3;
+    position: relative;
+}
+header{
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: 30%;
+}
+.menu a{
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.menu a:hover{
+    color: #007bff;
+
+    scale: 1.2;
+}
+.menu ul{
+    display: flex;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10rem;
+    gap: 1rem;
+}
+.text p{
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    text-wrap: wrap;
+}
+.name{
+    font-family: "WindSong", serif;
+    color: #333;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.img{
+    justify-self: center;
+    align-content: center;
+}
+.img img{
+    object-fit:cover ;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: morphing 15s ease-in-out infinite;
+  }
+@keyframes morphing {
+0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+    padding-inline: 15%;
+    margin-bottom: 8rem;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 15%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+article h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.skill{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skill:hover{
+    background: #8f8f8fbe;
+    color: white;
+    scale: 1.1;
+}
+
+.skills img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.skill span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+.skills p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+.skill p span{
+    color: #007bff;
+}
+.skill span:hover{
+    color: #333;
+}
+
+    
