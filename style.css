@@ -32,7 +32,7 @@ header{
     align-items: center;
     padding-block: 1rem;
     padding-inline: 30%;
-    margin-block:.5rem ;
+    margin-bottom:.5rem ;
 }
 
 .a{ 
@@ -52,6 +52,64 @@ header{
 }
 .menu ul{
     display: flex;
+}
+.menu1 ul{
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    padding: 3rem;
+}
+.menu2{
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.308);
+}
+.show{
+    visibility: visible;
+}
+#barra{
+    position: absolute;
+    top: 1.5rem;
+    font-size: 1rem;
+}
+.menu1{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: 30%;
+    margin-bottom:.5rem ;
+    top: -18%;
+    right: 3%;
+    gap: 3rem;   
+}
+.ae{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: #007bff 1px transparent;
+    
+}
+@media (max-width: 1170px){
+    .menu1{
+        display: flex;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    
 }
 .text{
     display: flex;
@@ -122,8 +180,9 @@ aside{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    opacity: .65;
+    opacity: ;
     margin-bottom: 5rem;
+    color: #333;
 }
 .hide{
     display: none;

@@ -1,5 +1,5 @@
-
 let scroll1 = document.getElementById("scroll");
+
 if (scroll1) { 
     window.addEventListener("scroll", () => {
         let scrollPosition = window.scrollY;
